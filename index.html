@@ -1,0 +1,28 @@
+<html ng-app="CalApp">
+	<head>
+		<title>Calculator</title>
+		<script src="angular.js"></script>
+		<script src="apps.js"></script>
+
+	</head>
+
+	<body ng-controller="calculateCtrl">
+		<div>
+			<p>
+				<input type="number" ng-model="num1"/>
+				<span> {{operator}} </span>
+				<input type="number" ng-model="num2"/>
+				<button ng-click="calculate()"> = </button>
+				<span> {{result}} </span>
+			</p>
+
+			<p>Choose Operation:
+				<button ng-click="add()"> + </button>
+				<button ng-click="sub()"> - </button>
+				<button ng-click="mul()"> * </button>
+				<button ng-click="div()"> / </button>
+			</p>
+		</div>
+
+	</body>
+</html>
